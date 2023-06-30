@@ -69,6 +69,7 @@ void LL::insert(int value) {
       newPtr->set_prev(previousPtr);
       
       newPtr->set_next(currentPtr);
+      if(currentPtr)
       currentPtr->set_prev(newPtr);
     } // end else
     ++size;
@@ -88,6 +89,7 @@ int LL::deletes(int value) {
   if (value == hol->get_data()) {
     tempPtr = hol;         // hold onto node being removed
     hol = hol->get_next(); // de-thread the node
+    if(previousPtr)
     hol->set_prev(NULL);
     size--;
 
