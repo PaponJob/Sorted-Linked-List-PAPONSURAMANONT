@@ -72,3 +72,4 @@ void instructions( void ) //function to cout all the commands here
       "   2 to delete an element from the list.\n"
       "   3 to end."<<endl ;
 } // end function instructions
+//comment
